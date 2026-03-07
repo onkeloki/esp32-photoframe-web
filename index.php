@@ -300,7 +300,7 @@ $pinnedImg = is_file(PIN_FILE) ? trim(file_get_contents(PIN_FILE)) : '';
 <!-- ═══════════════════ LOGIN ═══════════════════ -->
 <div class="login-wrap">
   <div class="login-card">
-    <h1>� ESP32 <span>PhotoFrame</span> Web</h1>
+    <h1>📷 ESP32 PhotoFrame <span>Web</span></h1>
     <?php if ($error): ?><div class="alert alert-error"><?= h($error) ?></div><?php endif; ?>
     <form method="post">
       <input type="hidden" name="action" value="login">
@@ -316,7 +316,7 @@ $pinnedImg = is_file(PIN_FILE) ? trim(file_get_contents(PIN_FILE)) : '';
 <?php else: ?>
 <!-- ═══════════════════ ADMIN ═══════════════════ -->
 <header>
-  <h1>🖼 Picture <span>Frame</span> OS</h1>
+  <h1>� ESP32 PhotoFrame <span>Web</span></h1>
   <a class="logout" href="?logout">Sign out</a>
 </header>
 
@@ -327,7 +327,7 @@ $pinnedImg = is_file(PIN_FILE) ? trim(file_get_contents(PIN_FILE)) : '';
 
   <!-- ── Image URL for the frame ── -->
   <div class="card">
-    <h2>Image URL for the ESP32 PhotoFrame</h2>
+    <h2>Image URL for the ESP32 PhotoFrame Web</h2>
     <p style="font-size:.85rem;color:var(--muted);margin-bottom:.7rem">
       This URL returns a random image on every request.<br>
       Protected via <strong>Bearer Token</strong> – Header: <code>Authorization: Bearer &lt;token&gt;</code>

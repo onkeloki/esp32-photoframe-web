@@ -54,7 +54,7 @@ picture-frame-os/
 `https://your-domain.com/`  
 → Log in with credentials from `config.php` → upload / pin / delete images
 
-### Image URL for the ESP32 PhotoFrame
+### Image URL for the ESP32 PhotoFrame Web
 ```
 https://your-domain.com/image.php
 ```
