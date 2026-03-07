@@ -5,6 +5,21 @@ Upload, manage and display images via a random-image URL on your frame.
 
 ---
 
+## About this project
+
+I own a **[Waveshare ESP32-S3 PhotoPainter](https://www.waveshare.com/esp32-s3-photopainter.htm)** – a beautiful 7.3-inch e-ink display.
+
+By default the device runs Waveshare's stock firmware, but there is a much better open-source alternative:  
+👉 **[aitjcize/esp32-photoframe](https://github.com/aitjcize/esp32-photoframe)**
+
+Once you flash this firmware, the frame can be configured with:
+- an **HTTPS image URL** to fetch photos from
+- a **Bearer Token** for authenticated access
+
+This project is the server-side companion: a self-hosted PHP web app where I upload and manage photos that are then served **randomly** to my e-ink frame on every refresh cycle.
+
+---
+
 ## Features
 
 - **Admin interface** – upload, preview & delete images (password protected)  
