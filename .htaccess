@@ -1,0 +1,22 @@
+# ── Sicherheits-Header ────────────────────────────────────
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ── config.php niemals direkt ausliefern ──────────────────
+<Files "config.php">
+    Require all denied
+</Files>
+
+# ── Directory Listing global deaktivieren ─────────────────
+Options -Indexes
+
+# ── Optionales URL-Rewriting (saubere URLs) ───────────────
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # HTTPS erzwingen (auskommentiert lassen bis SSL eingerichtet)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>

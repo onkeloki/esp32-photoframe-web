@@ -1,0 +1,17 @@
+# Direktes Aufrufen von PHP-Dateien im Upload-Ordner verbieten
+<FilesMatch "\.php$">
+    Require all denied
+</FilesMatch>
+
+# Versteckte Dateien (z.B. .pinned) sperren
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Nur Bild-Dateien erlauben
+<FilesMatch "\.(jpg|jpeg|png|gif|webp)$">
+    Require all granted
+</FilesMatch>
+
+# Directory Listing deaktivieren
+Options -Indexes
