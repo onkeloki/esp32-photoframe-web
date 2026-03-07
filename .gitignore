@@ -1,0 +1,14 @@
+# ── Sensitive config (never commit real passwords) ────────
+config.php
+
+# ── Uploaded images ────────────────────────────────────────
+uploads/*
+!uploads/.htaccess
+
+# ── Runtime files ──────────────────────────────────────────
+uploads/.pinned
+
+# ── OS / editor noise ──────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp

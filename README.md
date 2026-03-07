@@ -8,7 +8,7 @@ Upload, manage and display images via a random-image URL on your frame.
 ## Features
 
 - **Admin interface** – upload, preview & delete images (password protected)  
-- **Random image** – `image.php` returns a different image on every request (Bearer Token auth)  
+- **Random image** – `image.php` returns a difficerent image on every request (Bearer Token auth)  
 - **Auto-scaling** – every image is resized to **800 × 480 px** (cover mode, centre crop – no black bars)  
 - **Pin** – mark one image to be shown on the very next request, then back to random  
 - **Multi-upload** – select multiple files at once  
@@ -34,10 +34,14 @@ picture-frame-os/
 ## Installation
 
 1. Copy files to a PHP-capable web server (Apache + mod_rewrite recommended)
-2. Open `config.php` and **change the passwords**:
+2. Copy the example config and **set your passwords**:
+   ```bash
+   cp config.example.php config.php
+   ```
+   Then edit `config.php`:
    ```php
    define('ADMIN_PASSWORD', 'yourSecurePassword');
-   define('FRAME_TOKEN',    'yourBearerToken');
+   define('FRAME_TOKEN',    'yourBearerToken');   // generate: openssl rand -base64 48
    ```
 3. The `uploads/` directory must be **writable** by the web server:
    ```bash
