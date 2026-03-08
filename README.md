@@ -4,6 +4,9 @@ PHP-based web interface for ESP32 digital photo frames.
 Upload, manage and display images via a random-image URL on your frame.
 
 ![ESP32 PhotoFrame Web – Admin Interface](screenshot.png)
+![Frame Example]
+(frame.png)
+
 
 ---
 
