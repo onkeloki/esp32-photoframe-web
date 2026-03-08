@@ -5,7 +5,7 @@ Upload, manage and display images via a random-image URL on your frame.
 
 ![ESP32 PhotoFrame Web – Admin Interface](screenshot.png)
 
-![ESP32 PhotoFrame](frame.png)
+<p align="center"><img src="frame.png" alt="ESP32 PhotoFrame"></p>
 
 
 
